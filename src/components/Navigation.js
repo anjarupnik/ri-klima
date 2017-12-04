@@ -1,44 +1,36 @@
 import React, { PureComponent } from 'react'
 import AppBar from 'material-ui/AppBar'
 import Logo from '../images/LOGO.png'
-import Icon from 'material-ui/svg-icons/action/view-headline'
-import IconMenu from 'material-ui/IconMenu'
-import IconButton from 'material-ui/IconButton'
-import MenuItem from 'material-ui/MenuItem'
 import './Navigation.css'
 
 class Navigation extends PureComponent {
 
   render () {
     return (
-      <AppBar
-        style={{
-          height: '20%',
-          top: '0',
-          bottom: '0',
-          paddingBottom: '0',
-          paddingTop: '0'
-        }}
-        iconStyleRight={{
-          marginTop: '2%'
-        }}
-        iconElementLeft={<img className="logo" src={Logo} alt="logo" />}
-        iconElementRight={
-          <IconMenu
-            iconButtonElement={
-              <IconButton><Icon style={{height: '220px'}}/></IconButton>
-            }
-            targetOrigin={{horizontal: 'right', vertical: 'top'}}
-            anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-          >
-
-            <MenuItem primaryText="Klimatizacija" />
-            <MenuItem primaryText="Ventilacija" />
-            <MenuItem primaryText="Grijanje" />
-
-          </IconMenu>
-        }
-      />
+      <nav class="nav-extended">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo"><img src={Logo} alt="logo" /></a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li><a href="sass.html">Sass</a></li>
+            <li><a href="badges.html">Components</a></li>
+            <li><a href="collapsible.html">JavaScript</a></li>
+          </ul>
+        </div>
+        <div class="nav-content">
+          <ul class="tabs tabs-transparent">
+            <li class="tab"><a href="#test1">Test 1</a></li>
+            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
+            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
+            <li class="tab"><a href="#test4">Test 4</a></li>
+          </ul>
+        </div>
+      </nav>
     )
   }
 }
