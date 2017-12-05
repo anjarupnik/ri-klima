@@ -5,7 +5,7 @@ class Facebook extends PureComponent {
   render() {
     return (
         <div className="facebook">
-        <SocialIcon url="https://www.facebook.com/riklimaopatija" />
+         <SocialIcon url="https://www.facebook.com/riklimaopatija" />
         </div>
     )
   }
