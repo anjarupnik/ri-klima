@@ -1,6 +1,32 @@
+@media only screen and (max-width: 500px) {
+    .logo {
+        height: 70%;
+        width: 70%;
+        margin-top: 2%;
+    }
+}
+
 .logo {
-  height: 90%;
-  width: 90%;
-  margin-left: 10%;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: 5%;
   margin-bottom: 0;
+}
+
+.brand-logo {
+  position: relative;
+  left: 0;
+}
+
+.tabs-transparent {
+  position: relative;
+  left: 20%;
+}
+
+.nav-extended {
+  background: linear-gradient(15deg, #13547a 60%, #80d0c7 100%);
+}
+
+.nav-content a {
+  font-size: 20px;
 }

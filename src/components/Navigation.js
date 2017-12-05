@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react'
-import AppBar from 'material-ui/AppBar'
 import Logo from '../images/LOGO.png'
 import './Navigation.css'
 
@@ -7,30 +6,28 @@ class Navigation extends PureComponent {
 
   render () {
     return (
-      <nav class="nav-extended">
-        <div class="nav-wrapper">
-          <a href="#" class="brand-logo"><img src={Logo} alt="logo" /></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">JavaScript</a></li>
-          </ul>
-        </div>
-        <div class="nav-content">
-          <ul class="tabs tabs-transparent">
-            <li class="tab"><a href="#test1">Test 1</a></li>
-            <li class="tab"><a class="active" href="#test2">Test 2</a></li>
-            <li class="tab disabled"><a href="#test3">Disabled Tab</a></li>
-            <li class="tab"><a href="#test4">Test 4</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div className="navbar-fixed">
+        <nav className="nav-extended">
+          <div className="nav-wrapper">
+            <a href="#" className="brand-logo"><img className="logo" src={Logo} alt="logo" /></a>
+            <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
+            <ul id="nav-mobile" className="right hide-on-med-and-down">
+              <li><a href="sass.html">O nama</a></li>
+              <li><a href="badges.html">Usluge</a></li>
+              <li><a href="collapsible.html">Kontakt</a></li>
+            </ul>
+          </div>
+          <div className="nav-content">
+            <ul id="nav-mobile" className="tabs tabs-transparent hide-on-med-and-down">
+              <li className="tab"><a className="klima" href="#test1">Klimatizacija</a></li>
+              <li className="tab"><a className="klima" href="#test2">Ventilacija</a></li>
+              <li className="tab"><a href="#test3" className="klima">Grijanje</a></li>
+              <li className="tab"><a href="#test4" className="klima">Vodoinstalacija</a></li>
+              <li className="tab"><a href="#test5" className="klima">Zaposlenje</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     )
   }
 }
