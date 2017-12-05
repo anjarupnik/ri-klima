@@ -1,0 +1,18 @@
+@media only screen and (max-width: 500px) {
+    .SocialIcon {
+        flex-direction: row;
+    }
+}
+
+.SocialIcon {
+  display: flex;
+  flex-direction: row;
+}
+
+.facebook {
+  margin-right: 10px;
+}
+
+.youtube {
+  margin-right: 10px;
+}
