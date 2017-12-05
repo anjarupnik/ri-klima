@@ -13,7 +13,7 @@ footer {
 
 .page-footer {
   max-height: 80%;
-  background: #98aed6;
+  background: linear-gradient(28deg, #13547a 60%, #80d0c7 100%);
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -8,9 +8,9 @@ class SocialMedia extends PureComponent {
   render() {
     return (
       <div className="SocialIcon">
-        <Facebook />
         <YouTube />
         <Google />
+        <Facebook />
       </div>
     )
   }
