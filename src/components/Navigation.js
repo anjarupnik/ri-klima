@@ -1,6 +1,9 @@
 import React, { PureComponent } from 'react'
 import Logo from '../images/LOGO.png'
 import './Navigation.css'
+import IconButton from 'material-ui/IconButton';
+import IconMenu from 'material-ui/IconMenu';
+import MenuItem from 'material-ui/MenuItem';
 
 class Navigation extends PureComponent {
 
@@ -10,12 +13,31 @@ class Navigation extends PureComponent {
         <nav className="nav-extended">
           <div className="nav-wrapper">
             <a href="#" className="brand-logo"><img className="logo" src={Logo} alt="logo" /></a>
-            <a href="#" data-activates="mobile-demo" className="button-collapse"><i className="material-icons">menu</i></a>
-            <ul id="nav-mobile" className="right hide-on-med-and-down">
+            <a href="#" data-activates="mobile-demo" className="button-collapse">
+              <IconMenu
+                className="hamburger"
+                iconButtonElement={
+                  <IconButton><i className="material-icons">menu</i></IconButton>
+                }
+                targetOrigin={{horizontal: 'right', vertical: 'top'}}
+                anchorOrigin={{horizontal: 'right', vertical: 'top'}}
+              >
+                <MenuItem primaryText="Klimatizacija" />
+                <MenuItem primaryText="Ventilacija" />
+                <MenuItem primaryText="Grijanje" />
+                <MenuItem primaryText="Vodoinstalacija" />
+                <MenuItem primaryText="Zaposlenje" />
+                <MenuItem primaryText="Usluge" />
+                <MenuItem primaryText="O nama" />
+                <MenuItem primaryText="Kontakt" />
+              </IconMenu>
+            </a>
+            <ul className="right hide-on-med-and-down">
               <li><a href="sass.html">O nama</a></li>
               <li><a href="badges.html">Usluge</a></li>
               <li><a href="collapsible.html">Kontakt</a></li>
             </ul>
+
           </div>
           <div className="nav-content">
             <ul id="nav-mobile" className="tabs tabs-transparent hide-on-med-and-down">
