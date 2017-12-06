@@ -5,12 +5,6 @@
     }
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
-
 .page-footer {
   max-height: 80%;
   background: linear-gradient(28deg, #13547a 60%, #80d0c7 100%);
