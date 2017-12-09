@@ -32,10 +32,10 @@ class ACPaper extends PureComponent {
     return (
       <div className="slide">
         <Paper style={style} zDepth={4} rounded={false}>
-          <img className="img" src="http://res.cloudinary.com/mdfchucknorris/image/upload/v1512651883/ke-tke_enqaew.png" alt="klima"/>
+          <img className="img" src={this.props.image} alt="klima"/>
           <div className="info">
-            <h3 className="model">3,5 kW: GWH12RA</h3>
-            <h4 className="price">Cijena: 3.750,00 kn</h4>
+            <h3 className="model">{this.props.model}</h3>
+            <h4 className="price">{this.props.price}</h4>
             <RaisedButton
                label="Opširnije"
                labelPosition="before"
