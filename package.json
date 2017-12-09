@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "create-react-class": "^15.6.2",
     "history": "^4.7.2",
     "material-ui": "^0.20.0",
     "material-ui-community-icons": "^0.15.0",
@@ -11,10 +10,8 @@
     "materialize-css": "^0.100.2",
     "nuka-carousel": "^3.0.0",
     "react": "^16.2.0",
-    "react-coverflow": "^0.2.3",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
-    "react-responsive-carousel": "^3.1.30",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.8",

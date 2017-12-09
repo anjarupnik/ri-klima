@@ -17,7 +17,7 @@ class Footer extends PureComponent {
                     Ri Klima Opatija d.o.o. |
                     <a href="https://www.google.hr/maps/place/Ri+Klima+Opatija+d.o.o./@45.355832,14.335646,15z/data=!4m5!3m4!1s0x0:0xbba2293ea06f697e!8m2!3d45.3556557!4d14.3359121"
                       target="_blank"> Pavlovac 7/a </a> |
-                    <a href="tel:385-5127-7009"> Tel: +385 51 277 099 </a>
+                    <a href="tel:385-5127-7009"> Tel: +385 51 277 099 </a> |
                     Fax: +385 51 277 527 |
                     <a href="mailto:ri-klima@ri.t-com.hr"> E-mail: ri-klima@ri.t-com.hr</a></p>
                 </div>

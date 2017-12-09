@@ -3,6 +3,7 @@ import Carousel from 'nuka-carousel'
 import './Carousel.css'
 import { Decorators } from './Decorators'
 import Paper from './Paper'
+import { connect } from 'react-redux'
 
 class Caro extends Component {
   render() {
@@ -12,18 +13,19 @@ class Caro extends Component {
           cellAlign='left'
           decorators={Decorators}
           autoplay={true}
+          dragging={true}
           >
-          <Paper />
-          <Paper />
-          <Paper />
-          <Paper />
-          <Paper />
-          <Paper />
-          <Paper />
+          {this.props.special.map(m =>
+          <Paper image={m.image} key={m.price} model={m.model} price={m.price}/>
+
+          )}
+
         </Carousel>
       </div>
     )
   }
 }
 
-export default Caro
+const mapStateToProps = ({special}) => ({special})
+
+export default connect(mapStateToProps)(Caro)
