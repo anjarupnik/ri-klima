@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react'
 import Drawer from 'material-ui/Drawer'
 import RaisedButton from 'material-ui/RaisedButton'
+import Title from './Title'
+import Send from 'material-ui/svg-icons/content/send'
 
 class MailDrawer extends PureComponent {
 
@@ -17,13 +19,19 @@ class MailDrawer extends PureComponent {
     return (
       <div>
         <RaisedButton
-          label="Toggle Drawer"
+          label="Pošalji email"
           onClick={this.handleToggle}
+          icon={<Send />}
         />
         <Drawer
-          docked={false} width={200} openSecondary={true}
-          onRequestChange={(open) => this.setState({open})} 
+          docked={false} width={400} openSecondary={true}
+          onRequestChange={(open) => this.setState({open})}
           open={this.state.open} >
+          <Title content="Pošalji email"/>
+          <RaisedButton
+            label="Nazad"
+            onClick={this.handleClose}
+          />
         </Drawer>
       </div>
 

@@ -1,0 +1,12 @@
+.title {
+  font-family: Slab Robot, serif;
+  color: white;
+  margin-top: 0;
+}
+
+.titleContainer {
+  width: 100%;
+  text-align: center;
+  background-color: #78909C;
+  margin-top: 0;
+}
