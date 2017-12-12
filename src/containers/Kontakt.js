@@ -25,7 +25,9 @@ class Kontakt extends PureComponent {
               <ListItem primaryText="+385 51 277 527" leftIcon={<Fax />} />
               <ListItem primaryText={<a href="http://www.ri-klima.hr/" target="_blank">http://www.ri-klima.hr/</a>} leftIcon={<Site />} />
            </List>
+           <div className="drawerButton">
            <MailDrawer />
+           </div>
          </div>
       </div>
     )

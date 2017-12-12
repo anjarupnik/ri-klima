@@ -12,10 +12,14 @@ text {
   flex-direction: column;
 }
 
-a {
+.contactPage a {
   color: black;
 }
 
 .adresa {
   margin-bottom: 5%;
+}
+
+.drawerButton {
+  margin-top: 20%;
 }
