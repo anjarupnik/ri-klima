@@ -3,6 +3,13 @@ import Drawer from 'material-ui/Drawer'
 import RaisedButton from 'material-ui/RaisedButton'
 import Title from './Title'
 import Send from 'material-ui/svg-icons/content/send'
+import MailForm from '../containers/MailForm'
+
+const style = {
+  marginTop: '25%',
+  float: 'left',
+  marginLeft: '5%',
+}
 
 class MailDrawer extends PureComponent {
 
@@ -28,7 +35,9 @@ class MailDrawer extends PureComponent {
           onRequestChange={(open) => this.setState({open})}
           open={this.state.open} >
           <Title content="Pošalji email"/>
+          <MailForm />
           <RaisedButton
+            style={ style }
             label="Nazad"
             onClick={this.handleClose}
           />
