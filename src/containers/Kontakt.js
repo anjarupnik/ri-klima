@@ -7,6 +7,7 @@ import Phone from 'material-ui/svg-icons/communication/phone'
 import Fax from 'material-ui/svg-icons/action/print'
 import Site from 'material-ui/svg-icons/social/public'
 import Divider from 'material-ui/Divider'
+import MailDrawer from '../components/Drawer'
 
 class Kontakt extends PureComponent {
   render() {
@@ -24,6 +25,7 @@ class Kontakt extends PureComponent {
               <ListItem primaryText="+385 51 277 527" leftIcon={<Fax />} />
               <ListItem primaryText={<a href="http://www.ri-klima.hr/" target="_blank">http://www.ri-klima.hr/</a>} leftIcon={<Site />} />
            </List>
+           <MailDrawer />
          </div>
       </div>
     )
