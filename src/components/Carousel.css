@@ -27,11 +27,13 @@
 
 .model {
   color: black;
+  font-family: Lato, sans-serif;
 }
 
 .price {
   color: black;
   margin-top: 20px;
+  font-family: Lato, sans-serif;
 }
 
 .info {
