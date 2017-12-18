@@ -1,0 +1,38 @@
+.servisiContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  margin-top: 20px;
+  font-family: Lato, sans-serif;
+}
+
+.titleBox {
+  background-image: url('http://res.cloudinary.com/mdfchucknorris/image/upload/v1513591306/servis_klima_uredaja_wki399.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+}
+
+.servisiTitle {
+  align-self: center;
+  margin-top: 0;
+}
+
+.questions {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.intro {
+  margin-right: 20px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+.servisiContainer a {
+  color: #0000EE;
+  cursor: pointer;
+}
