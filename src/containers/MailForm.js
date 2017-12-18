@@ -3,6 +3,8 @@ import Paper from 'material-ui/Paper'
 import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
 import Send from 'material-ui/svg-icons/content/send'
+import sendEmail from '../actions/send'
+import { connect } from 'react-redux'
 
 class MailForm extends PureComponent {
 
@@ -10,7 +12,17 @@ class MailForm extends PureComponent {
 
   submitForm(event) {
     event.preventDefault()
-}
+    if (this.validateAll()) {
+      const mail = {
+        name: this.refs.name.getValue(),
+        email: this.refs.email.getValue(),
+        subject: this.refs.subject.getValue(),
+        message: this.refs.message.getValue()
+      }
+      this.props.sendEmail(mail)
+    }
+    return false
+  }
 
   validateAll() {
     return this.validateName() &&
@@ -130,4 +142,4 @@ class MailForm extends PureComponent {
   }
 }
 
-export default MailForm
+export default connect(null, {sendEmail})(MailForm)
