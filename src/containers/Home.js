@@ -1,11 +1,15 @@
 import React, { PureComponent } from 'react'
 import Caro from '../components/Carousel'
+import ServisiPart from '../components/ServisiPart'
 
 class Home extends PureComponent {
 
   render() {
     return (
-      <Caro />
+      <div>
+        <Caro />
+        <ServisiPart />
+      </div>
     )
   }
 }

@@ -1,0 +1,24 @@
+.shortContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 200px;
+  background-color: #CFD8DC;
+  padding-top: 60px;
+}
+
+.servisiImg {
+  height: 400px;
+  width: 400px;
+}
+
+.shortText {
+  height: 500px;
+  width: 600px;
+}
+
+.shortText a {
+  color: #0000EE;
+  cursor: pointer;
+}
