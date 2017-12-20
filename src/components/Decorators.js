@@ -29,7 +29,7 @@ export const Decorators = [
     },
     position: 'CenterLeft',
     style: {
-      marginLeft: '2%'
+      marginLeft: '-3.3%'
     }
   },
   {
@@ -48,8 +48,6 @@ export const Decorators = [
     },
     position: 'CenterRight',
     style: {
-
-      marginRight: '5%'
     }
   }
 ]

@@ -19,7 +19,7 @@ const style = {
    opacity: 0,
  },
   height: '120%',
-  width: '80%',
+  width: '100%',
   margin: 20,
   display: 'flex',
   justifyContent: 'space-around',
